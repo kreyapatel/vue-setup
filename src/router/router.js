@@ -4,10 +4,15 @@ Vue.use(VueRouter);
 import HomePage from "../components/HomePage.vue";
 import AboutPage from "../components/AboutPage.vue"
 import HelloWorld from '../components/HelloWorld.vue'
-
+import LoginPage from '../components/LoginPage.vue'
 const routes = [
   {
     path: "/",
+    name: "LoginPage",
+    component: LoginPage,
+  },
+  {
+    path: "/home",
     name: "Home",
     component: HomePage,
   },
@@ -21,6 +26,7 @@ const routes = [
     name: "HelloWorld",
     component: HelloWorld,
   },
+  
 
 ];
 const router = new VueRouter({

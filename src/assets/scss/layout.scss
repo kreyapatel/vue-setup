@@ -1,0 +1,56 @@
+html {
+	height: 100%;
+	overflow-y: auto !important;
+}
+
+body {
+	height: 100%;
+	font-family: $primary-font;
+	font-weight: 400;
+	-webkit-tap-highlight-color: transparent;
+
+	.v-application {
+		font-family: $primary-font;
+		font-weight: 400;
+
+		h1, h2, h3, h4, h5, h6, p {
+			margin: 0;
+		}
+		a{
+			color: $black;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+ul, ol {
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+/*Scrollbar*/
+* {
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		// background: rgba($color: $black, $alpha: 0.05);
+		border-radius: 8px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba($color: $black, $alpha: 0.2);
+		border-radius: 8px;
+	}
+}
+
