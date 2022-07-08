@@ -1,13 +1,16 @@
-<template>
-  <v-container>
-    <h1>Home Page</h1>
-  </v-container>
+<template> 
+  <div class="home-wraper">     
+    <HeaderComponent />  
+  </div>
 </template>
 
 <script>
+  import HeaderComponent from '@/components/HeaderComponent.vue'
   export default {
     name: 'HomePage',
-
+    components: {
+      HeaderComponent,
+    },
     data: () => ({
     }),
   }
