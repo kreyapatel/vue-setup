@@ -1,0 +1,111 @@
+.main-panel {
+    margin-left: 250px;
+    position: relative;
+    z-index: 9;
+    padding-top: 76px;
+    .inner-content {
+        background: $bg-color;
+        position: relative; 
+    }
+}
+.page-title {
+    font-size: 16px;
+    color: $light-gray;
+    background: $bg-color1;
+    padding: 13px 28px 11px;
+}
+.content-wrap {
+    padding: 30px;
+}
+.card-wrapper {
+    position: relative;
+    padding: 14px 88px 14px 28px;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)!important;
+    .card-content {
+        .stats-number {
+            font-size: 34px;
+            color: $red;
+            line-height: 35px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        p {
+            padding-bottom: 0px;
+            font-size: 18px;
+            line-height: normal;
+            color: $light-black;
+            margin-bottom: 0;
+        }
+    }
+    .card-img {
+        position: absolute;
+        right: 20px;
+        top: 26px;
+    }
+}
+.inner-header {
+    border-bottom: 1px dotted $light-gray1;
+    color: $light-black;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 18px 20px 15px;
+}
+.card-inner-bg {
+    background: $white;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+    margin: 35px 0 0;
+}
+.data-table-form {
+    padding: 30px 20px 10px;
+    .v-text-field {
+        &.v-text-field--enclosed{
+            .v-text-field__details {
+                display: none;
+            }
+        }
+    } 
+    .row {
+        [class*='col-'] {
+            flex: 0 0 15.666667%;
+            max-width: 15.666667%;
+        }
+        .btn-wrapper-outer {
+            flex: 1;
+            max-width: 100%;
+            .btn-wrapper {
+                display: flex;
+                align-items: center;
+                .v-btn {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+.v-list-item--link{
+    &:before {
+        background-color: $red !important; 
+    }
+}
+.custom-datatable {
+    padding: 10px 20px 20px;
+    thead {
+        th {
+            color: $light-black;
+            font-family: $primary-font-regular;
+        }
+    }
+    table,
+    table th,
+    table td {
+        border: 1px solid #eeeeee;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    tbody > tr:nth-of-type(2n+1) {
+        background: #f7f6f3;
+    }
+}
