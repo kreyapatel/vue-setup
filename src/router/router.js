@@ -6,6 +6,9 @@ import AboutPage from "../components/AboutPage.vue"
 import HelloWorld from '../components/HelloWorld.vue'
 import FooterComponent from '../components/FooterComponent.vue'
 import LoginPage from '../components/LoginPage.vue'
+import WeeklyStatement from '../components/WeeklyStatement.vue'
+import VehicleType from '../components/VehicleType.vue'
+
 const routes = [
   {
     path: "/",
@@ -31,6 +34,16 @@ const routes = [
     path: "/footer",
     name: "FooterComponent",
     component: FooterComponent,
+  },
+  {
+    path: "/WeeklyStatement",
+    name: "WeeklyStatement",
+    component: WeeklyStatement,
+  },
+  {
+    path: "/VehicleType",
+    name: "VehicleType",
+    component: VehicleType,
   },
 
 ];
