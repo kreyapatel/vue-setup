@@ -6,26 +6,36 @@
     border-right: 4px solid transparent;
     border-top: 4px solid $black2;
 }
-body {
+body {    
     .header {
-        &.v-toolbar {
-            padding: 0;
-            z-index: 99;
-            position: fixed;
-            top: 0;
-            border-bottom: 1px solid #f2eae6;
-            background: #fff;
-            min-height: 76px;
-            left: 300px;
-            right: 0;
-            box-shadow: none;      
-            .v-toolbar__content {
-                padding: 0 0 0 38px;
-                min-height: inherit;
-                display: flex;
-                justify-content: space-between;
+        &.v-toolbar{
+            &.v-app-bar{
+                padding: 0;
+                z-index: 99;                
+                border-bottom: 1px solid #f2eae6;
+                background: #fff;
+                min-height: 76px;
+                box-shadow: none;  
+                .v-toolbar__content {
+                    padding: 0;
+                    min-height: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                }
             }
         }  
+        .header-left{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-toggle{
+            height: 100% !important;
+            border-right: 1px solid #a19797;
+            border-radius: 0;
+            margin-right: 15px;
+            width: 60px !important;
+        }
         .badge {
             border: 2px solid $white;
             color: #ffffff;

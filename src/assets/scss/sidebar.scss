@@ -1,12 +1,4 @@
 .sidebar{
-    position: fixed;
-    width: 250px;
-    z-index: 9;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
    .v-sheet.v-card:not(.v-sheet--outlined){
         box-shadow: none;
     }
@@ -16,12 +8,15 @@
     }
     .sidebar-title{
         background: $red;
-        padding: 20px 26px 14px 28px;
+        padding: 16px 26px 12px 28px;
         position: absolute;
         top: 0;
+        left: 0;
+        right: 0;
         .logo-img{
             width: 195px;
             transition: all 0.3s;
+            margin: 0 auto;
         }
     }
     .toggle-btn{
@@ -30,7 +25,7 @@
     }
     .v-navigation-drawer__content{
         background:  #4e4945;
-        margin-top: 82px;
+        margin-top: 76px;
     }
     .v-sheet.v-list{
         padding: 0;
@@ -124,13 +119,11 @@
     }
     .v-navigation-drawer--mini-variant {
         .logo-img{
-            // opacity: 0;
-            visibility: hidden;
-            // position: relative;
-            // left: -210px;
-            // transform: translateX(-210px);
-            width: 0;
+            margin-left: 6px !important;
+            visibility: visible;
+            width: 30px;
             transition: all 0.3s;
+            overflow-x: hidden;
         }
         .v-list-item > *:not(:first-child){
             width: 36px;

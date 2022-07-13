@@ -1,47 +1,45 @@
 <template>
     <div class="sidebar">
-       <div class="sidebar-inner">
-          <v-card>
-            <v-navigation-drawer
-              v-model="drawer"
-              :mini-variant.sync="mini"
-              permanent
-            > 
-              <v-list-item class="px-2 sidebar-title">
-                <div class="logo-img">
-                  <img src="@/assets/images/logo.png" alt="logo" >
-                </div>
-                <v-app-bar-nav-icon class="toggle-btn" icon  @click.stop="mini = !mini"></v-app-bar-nav-icon>
-              </v-list-item>
-              <vue-custom-scrollbar class="scroll-area"  :settings="settings" @ps-scroll-y="scrollHanle">
-                <v-list>  
-                  <v-list-item-group  v-model="selectedItem">                        
-                    <v-list-item
-                      v-for="(item, index) in items"
-                      :key="index"
-                      link >
-                      <v-tooltip content-class="tooltip-right" right  :disabled = "!mini">
-                        <template v-slot:activator="{ on, attrs }">
-                          <v-list-item-icon 
-                          v-bind="attrs"
-                          v-on="on">
-                            <img  :src="require('@/assets/images/' + item.icon)" alt="dashboard" class="normal-img" >
-                            
-                            <img :src="require('@/assets/images/' + item.iconH)" alt="dashboard-h" class="hover-img" >
-                          </v-list-item-icon>
-                        </template>
-                        <span>{{ item.title }}</span>
-                      </v-tooltip>
-                      <v-list-item-content>
-                          {{ item.title }}
-                        </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                </v-list>
-              </vue-custom-scrollbar>
-            </v-navigation-drawer>
-        </v-card>      
-       </div>
+      <v-navigation-drawer
+          class="app--drawer"
+            v-model="drawer"
+            :mini-variant.sync="mini"
+            app
+            fixed
+          > 
+          <v-list-item class="px-2 sidebar-title">
+            <div class="logo-img">
+              <img src="@/assets/images/logo.png" alt="logo" >
+            </div>        
+            <!-- <v-app-bar-nav-icon class="toggle-btn" icon  @click.stop="mini = !mini"></v-app-bar-nav-icon> -->
+          </v-list-item>
+          <vue-custom-scrollbar class="scroll-area"  :settings="settings" @ps-scroll-y="scrollHanle">
+            <v-list>  
+              <v-list-item-group  v-model="selectedItem">                        
+                <v-list-item
+                  v-for="(item, index) in items"
+                  :key="index"
+                  link >
+                  <v-tooltip content-class="tooltip-right" right  :disabled = "!mini">
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-list-item-icon 
+                      v-bind="attrs"
+                      v-on="on">
+                        <img  :src="require('@/assets/images/' + item.icon)" alt="dashboard" class="normal-img" >
+                        
+                        <img :src="require('@/assets/images/' + item.iconH)" alt="dashboard-h" class="hover-img" >
+                      </v-list-item-icon>
+                    </template>
+                    <span>{{ item.title }}</span>
+                  </v-tooltip>
+                  <v-list-item-content>
+                      {{ item.title }}
+                    </v-list-item-content>
+                </v-list-item>
+              </v-list-item-group>
+            </v-list>
+          </vue-custom-scrollbar>
+        </v-navigation-drawer>
     </div>
 </template>
 
@@ -57,8 +55,8 @@
     data () {
       return {         
         selectedItem:0,
-        drawer: false,
-        mini: false,       
+        drawer: true,
+        mini: false,      
         settings: {
           suppressScrollY: false,
           suppressScrollX: false,

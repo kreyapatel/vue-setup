@@ -1,8 +1,7 @@
 .main-panel {
-    margin-left: 250px;
     position: relative;
-    z-index: 9;
-    padding-top: 76px;
+        // z-index: 9;
+    padding-top: 12px;
     .inner-content {
         background: $bg-color;
         position: relative; 
@@ -82,11 +81,6 @@
                 }
             }
         }
-    }
-}
-.v-list-item--link{
-    &:before {
-        background-color: $red !important; 
     }
 }
 .custom-datatable {

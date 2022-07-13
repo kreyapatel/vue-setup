@@ -1,15 +1,19 @@
 <template>
-  <v-toolbar class="header">   
-    <v-badge 
-      color="#ed6c44" 
-      class="badge" 
-      overlap
-    >
-      <template v-slot:badge>
-        <span>3</span>
-      </template>
-      <v-img src="@/assets/images/error.png" alt="error" width="21" height="20" />
-    </v-badge>
+  <v-app-bar app class="header"> 
+    <div class="header-left">
+      <v-app-bar-nav-icon @click.stop="$emit('toggle-mini')" class="sidebar-toggle">
+      </v-app-bar-nav-icon> 
+      <v-badge 
+        color="#ed6c44" 
+        class="badge" 
+        overlap
+      >
+        <template v-slot:badge>
+          <span>3</span>
+        </template>
+        <v-img src="@/assets/images/error.png" alt="error" width="21" height="20" />
+      </v-badge>
+    </div>
 
     <div class="header-right">
       <v-menu offset-y class="profile-drodown">
@@ -54,7 +58,7 @@
         <v-img src="@/assets/images/logout-icon.png" alt="logout-icon" width="22" height="26" /> 
       </v-btn>
     </div>
-  </v-toolbar>
+  </v-app-bar>
 </template>
 
 <style lang="scss" scoped>
