@@ -9,6 +9,9 @@ import LoginPage from '../components/LoginPage.vue'
 import PromoCode from '../components/PromoCode.vue'
 import ProfileComponent from '../components/ProfileComponent.vue'
 import AdminControl from '../components/AdminControl.vue'
+import WeeklyStatement from '../components/WeeklyStatement.vue'
+import VehicleType from '../components/VehicleType.vue'
+
 const routes = [
   {
     path: "/",
@@ -49,6 +52,16 @@ const routes = [
     path: "/admin-control",
     name: "AdminControl",
     component: AdminControl,
+  },
+  {
+    path: "/WeeklyStatement",
+    name: "WeeklyStatement",
+    component: WeeklyStatement,
+  },
+  {
+    path: "/VehicleType",
+    name: "VehicleType",
+    component: VehicleType,
   },
 
 ];

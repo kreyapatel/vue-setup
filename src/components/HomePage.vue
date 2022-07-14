@@ -1,5 +1,5 @@
 <template>
-  <div class="home-wraper"> 
+  <div class="home-wraper">  
     <HeaderComponent  @toggle-mini="$refs.drawer.mini = !$refs.drawer.mini" />  
     <SidebarComponent ref="drawer" />
     <div class="main-panel">
@@ -8,7 +8,7 @@
             Dashboard
           </div>
           <div class="content-wrap container--fluid">
-            <v-row>
+            <v-row class="mb-6">
                 <v-col class="col-lg-4 col">
                     <v-card class="card-wrapper">
                         <div class="card-content">

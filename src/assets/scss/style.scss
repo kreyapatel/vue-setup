@@ -54,7 +54,6 @@
     background: $white;
     border-radius: 4px;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
-    margin: 35px 0 0;
 }
 .data-table-form {
     padding: 30px 20px 10px;
@@ -102,4 +101,7 @@
     tbody > tr:nth-of-type(2n+1) {
         background: #f7f6f3;
     }
+}
+.inner-content-wrppaer {
+    padding: 30px 20px;
 }
