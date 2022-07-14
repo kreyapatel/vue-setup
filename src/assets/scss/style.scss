@@ -105,3 +105,72 @@
 .inner-content-wrppaer {
     padding: 30px 20px;
 }
+
+// admin form
+.card-form-wrapper {
+    .row {
+        margin: 0;
+    }
+    .v-card {
+        @include border-radius(3px);
+        @include box-shadow2(0, 1px, 3px, 0, rgba(0, 0, 0, 0.08));
+        .v-card__title {
+            color: $black;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 18px 20px 15px;
+        }
+        .v-divider {
+            border-color: $gray3;
+        }
+        .v-card__text {
+            padding: 20px;
+        }
+        .v-input  {
+            margin: 0 0 21px;
+            padding: 0;
+        }
+        .v-card__actions {
+            padding: 0;
+        }
+    }
+}
+.v-card__actions {
+    .primary-btn {
+        background-color: $red2;
+        display: inline-block;
+        height: auto;
+        padding: 0;
+        text-transform: none;
+        box-shadow: none;
+        max-width: 145px;
+        width: 100%;
+    }
+}
+
+// map-view page
+.card-form-wrapper  {
+    .map-row {
+        margin: 0 -10px;
+        .col {
+            padding: 0 10px;
+            .v-input {
+                margin-bottom: 0;
+            }
+        }
+        .location-btn {
+            min-width: 130px;
+            height: 35px;
+            .v-btn__content {
+                padding: 9px 14px;
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+    .map-wrapper {
+        iframe {
+            width: 100%;
+        }
+    }
+}

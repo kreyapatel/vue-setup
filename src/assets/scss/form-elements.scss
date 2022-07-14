@@ -119,6 +119,27 @@
       }
     }
   }
+  &.full-border {
+    &.v-text-field--outlined {
+      &.v-input--dense {
+        &.v-text-field--outlined {
+          > .v-input__control {
+            > .v-input__slot {
+              min-height: 35px;
+            }
+          }
+        }       
+      }
+      &.v-input--is-focused {
+        fieldset {
+          border: 1px solid $red;
+        }
+      }
+      fieldset {
+        border-color: $light-gray5;
+      }      
+    }    
+  }
 }
 .v-application {
   .primary-btn {

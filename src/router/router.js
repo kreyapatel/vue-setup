@@ -8,6 +8,8 @@ import FooterComponent from '../components/FooterComponent.vue'
 import LoginPage from '../components/LoginPage.vue'
 import WeeklyStatement from '../components/WeeklyStatement.vue'
 import VehicleType from '../components/VehicleType.vue'
+import AdminForm from '../components/AdminForm.vue'
+import MapView from '../components/MapView.vue'
 
 const routes = [
   {
@@ -45,7 +47,16 @@ const routes = [
     name: "VehicleType",
     component: VehicleType,
   },
-
+  {
+    path: "/admin-form",
+    name: "AdminForm",
+    component: AdminForm,
+  },
+  {
+    path: "/map-view",
+    name: "MapView",
+    component: MapView,
+  },
 ];
 const router = new VueRouter({
   mode: "history",
