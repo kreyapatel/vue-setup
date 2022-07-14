@@ -152,3 +152,90 @@
     }
   }
 }
+.v-select{
+  input{
+    min-height: 42px;
+    padding: 11px 0;
+  }
+  &.primary--text{
+      color: $red;
+      caret-color: $red !important;
+  }
+  &.v-text-field.v-input--is-focused > .v-input__control > .v-input__slot:after{
+    border-color: $red;
+    background-color: $red;
+  }
+}
+.theme--light.v-text-field:not(.v-input--has-state):hover > .v-input__control > .v-input__slot:before{
+  border-color: rgba(0, 0, 0, 0.42) !important;
+}
+.v-select-list .v-list-item:before{
+  background-color: $red !important; 
+}
+.v-select-list .v-list-item:hover:before{
+  opacity: 1 !important;
+}
+.v-select-list .v-list-item .v-list-item__content{
+  z-index: 1;
+}
+.v-select-list .v-list-item:hover{
+  color: $white !important;
+  z-index: 1;
+}
+body{
+  .v-application .primary--text{
+    color: $red !important;
+    caret-color: $red !important;
+  }
+}
+.v-application{
+  .v-picker__title.primary{
+    background-color: $red !important;
+    border-color: $red !important;
+  }  
+  .v-picker--date{
+    .accent--text{
+      color: $red3 !important;
+      caret-color: $red3 !important;
+    }
+  }
+}
+.v-date-picker-table{
+  .v-btn{
+    &:before{
+      background-color: $red3;
+    }
+    &:hover{
+      &:before{
+        opacity: 0.5;
+      }
+    }
+    &.v-btn--active{
+      &:hover{
+        &:before{
+          opacity: 1;
+        }
+      }
+      &:before{
+        opacity: 1;
+      }
+    }
+  }
+}
+body{
+  .v-input{
+    .v-input__control {
+      > .v-input__slot {
+        &:after,
+        &:before {
+          border: none;
+          background-color: $gray;
+          height: 1px;
+        }
+        &:after {
+          background-color: $red;
+        }
+      }
+    }
+  }
+}

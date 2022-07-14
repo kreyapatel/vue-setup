@@ -6,6 +6,9 @@ import AboutPage from "../components/AboutPage.vue"
 import HelloWorld from '../components/HelloWorld.vue'
 import FooterComponent from '../components/FooterComponent.vue'
 import LoginPage from '../components/LoginPage.vue'
+import PromoCode from '../components/PromoCode.vue'
+import ProfileComponent from '../components/ProfileComponent.vue'
+import AdminControl from '../components/AdminControl.vue'
 const routes = [
   {
     path: "/",
@@ -31,6 +34,21 @@ const routes = [
     path: "/footer",
     name: "FooterComponent",
     component: FooterComponent,
+  },
+  {
+    path: "/promo-code",
+    name: "PromoCode",
+    component: PromoCode,
+  },
+  {
+    path: "/profile",
+    name: "ProfileComponent",
+    component: ProfileComponent,
+  },
+  {
+    path: "/admin-control",
+    name: "AdminControl",
+    component: AdminControl,
   },
 
 ];
