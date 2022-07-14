@@ -11,12 +11,18 @@ import ProfileComponent from '../components/ProfileComponent.vue'
 import AdminControl from '../components/AdminControl.vue'
 import WeeklyStatement from '../components/WeeklyStatement.vue'
 import VehicleType from '../components/VehicleType.vue'
+import SignUp from '../components/SignUp.vue'
 
 const routes = [
   {
     path: "/",
     name: "LoginPage",
     component: LoginPage,
+  },
+  {
+    path: "/signup",
+    name: "SignUp",
+    component: SignUp,
   },
   {
     path: "/home",
