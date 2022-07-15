@@ -11,6 +11,10 @@ import ProfileComponent from '../components/ProfileComponent.vue'
 import AdminControl from '../components/AdminControl.vue'
 import WeeklyStatement from '../components/WeeklyStatement.vue'
 import VehicleType from '../components/VehicleType.vue'
+import AdminForm from '../components/AdminForm.vue'
+import MapView from '../components/MapView.vue'
+import ProviderTypes from "../components/ProviderTypes.vue"
+
 
 const routes = [
   {
@@ -59,9 +63,24 @@ const routes = [
     component: WeeklyStatement,
   },
   {
-    path: "/VehicleType",
+    path: "/types",
     name: "VehicleType",
     component: VehicleType,
+  },
+  {
+    path: "/admin-form",
+    name: "AdminForm",
+    component: AdminForm,
+  },
+  {
+    path: "/map-view",
+    name: "MapView",
+    component: MapView,
+  },
+  {
+    path: "/provider-types",
+    name: "ProviderTypes",
+    component: ProviderTypes,
   },
 
 ];

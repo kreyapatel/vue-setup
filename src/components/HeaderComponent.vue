@@ -66,11 +66,7 @@
    .v-menu__content {
       margin-top: 15px;
       @include border-radii(0, 0, 3px, 3px);            
-      -o-box-shadow: -2px 7px 5px -3px rgba(0, 0, 0, 0.4);
-      -ms-box-shadow: -2px 7px 5px -3px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: -2px 7px 5px -3px rgba(0, 0, 0, 0.4);
-      -webkit-box-shadow: -2px 7px 5px -3px rgba(0, 0, 0, 0.4);
-      box-shadow: -2px 7px 5px -3px rgba(0, 0, 0, 0.4);
+      @include box-shadow2(-2px, 7px, 5px, -3px, rgba(0, 0, 0, 0.4));
       border: 0px;
       .dropdown-menu-link {
           display: flex;

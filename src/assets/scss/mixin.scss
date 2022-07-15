@@ -23,7 +23,11 @@
 	-webkit-box-shadow: $left $top $radius $color;
 	-moz-box-shadow: $left $top $radius $color;
 }
-
+@mixin box-shadow2($left, $top, $radius, $blur, $color) {
+	box-shadow: $left $top $radius $blur $color;
+	-webkit-box-shadow: $left $top $radius $blur $color;
+	-moz-box-shadow: $left $top $radius $blur $color;
+}
 
 // Transform Mixin
 @mixin translate($transformX, $transformY) {
