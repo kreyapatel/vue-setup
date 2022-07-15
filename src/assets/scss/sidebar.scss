@@ -6,6 +6,9 @@
         height: 100%;
         border-radius: 0;
     }
+    .sidebar-link{
+        display: inline-flex;
+    }
     .sidebar-title{
         background: $red;
         padding: 16px 26px 12px 28px;
