@@ -13,7 +13,7 @@ import WeeklyStatement from '../components/WeeklyStatement.vue'
 import VehicleType from '../components/VehicleType.vue'
 import AdminForm from '../components/AdminForm.vue'
 import MapView from '../components/MapView.vue'
-import ProviderTypes from "../components/ProviderTypes.vue";
+import ProviderTypes from "../components/ProviderTypes.vue"
 
 
 const routes = [
@@ -77,6 +77,7 @@ const routes = [
     name: "MapView",
     component: MapView,
   },
+  {
     path: "/provider-types",
     name: "ProviderTypes",
     component: ProviderTypes,
