@@ -8,6 +8,8 @@ import FooterComponent from '../components/FooterComponent.vue'
 import LoginPage from '../components/LoginPage.vue'
 import WeeklyStatement from '../components/WeeklyStatement.vue'
 import VehicleType from '../components/VehicleType.vue'
+import ProviderTypes from "../components/ProviderTypes.vue";
+
 
 const routes = [
   {
@@ -36,14 +38,19 @@ const routes = [
     component: FooterComponent,
   },
   {
-    path: "/WeeklyStatement",
+    path: "/weekly-statement",
     name: "WeeklyStatement",
     component: WeeklyStatement,
   },
   {
-    path: "/VehicleType",
+    path: "/types",
     name: "VehicleType",
     component: VehicleType,
+  },
+  {
+    path: "/provider-types",
+    name: "ProviderTypes",
+    component: ProviderTypes,
   },
 
 ];
