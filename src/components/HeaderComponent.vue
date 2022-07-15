@@ -111,7 +111,7 @@
 
     data: () => ({      
       items: [
-        { title: 'My Profile', path: '/my-profile', icon: 'profile-icon.png', iconH: 'profile-icon-h.png' },
+        { title: 'My Profile', path: '/profile', icon: 'profile-icon.png', iconH: 'profile-icon-h.png' },
         { title: 'Help', path: '/help', icon: 'help-icon.png', iconH: 'help-icon-h.png' },
       ],
     }),

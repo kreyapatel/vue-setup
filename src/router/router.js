@@ -6,10 +6,15 @@ import AboutPage from "../components/AboutPage.vue"
 import HelloWorld from '../components/HelloWorld.vue'
 import FooterComponent from '../components/FooterComponent.vue'
 import LoginPage from '../components/LoginPage.vue'
+import PromoCode from '../components/PromoCode.vue'
+import ProfileComponent from '../components/ProfileComponent.vue'
+import AdminControl from '../components/AdminControl.vue'
 import WeeklyStatement from '../components/WeeklyStatement.vue'
 import VehicleType from '../components/VehicleType.vue'
 import AdminForm from '../components/AdminForm.vue'
 import MapView from '../components/MapView.vue'
+import ProviderTypes from "../components/ProviderTypes.vue";
+
 
 const routes = [
   {
@@ -38,12 +43,27 @@ const routes = [
     component: FooterComponent,
   },
   {
+    path: "/promo-code",
+    name: "PromoCode",
+    component: PromoCode,
+  },
+  {
+    path: "/profile",
+    name: "ProfileComponent",
+    component: ProfileComponent,
+  },
+  {
+    path: "/admin-control",
+    name: "AdminControl",
+    component: AdminControl,
+  },
+  {
     path: "/WeeklyStatement",
     name: "WeeklyStatement",
     component: WeeklyStatement,
   },
   {
-    path: "/VehicleType",
+    path: "/types",
     name: "VehicleType",
     component: VehicleType,
   },
@@ -57,6 +77,11 @@ const routes = [
     name: "MapView",
     component: MapView,
   },
+    path: "/provider-types",
+    name: "ProviderTypes",
+    component: ProviderTypes,
+  },
+
 ];
 const router = new VueRouter({
   mode: "history",
