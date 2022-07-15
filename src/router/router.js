@@ -15,12 +15,18 @@ import AdminForm from '../components/AdminForm.vue'
 import MapView from '../components/MapView.vue'
 import ProviderTypes from "../components/ProviderTypes.vue"
 
+import SignUp from '../components/SignUp.vue'
 
 const routes = [
   {
     path: "/",
     name: "LoginPage",
     component: LoginPage,
+  },
+  {
+    path: "/signup",
+    name: "SignUp",
+    component: SignUp,
   },
   {
     path: "/home",
