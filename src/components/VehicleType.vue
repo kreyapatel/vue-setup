@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="home-wraper">     
-      <HeaderComponent />  
-      <SidebarComponent />  
+      <HeaderComponent @toggle-mini="$refs.drawer.mini = !$refs.drawer.mini" />  
+      <SidebarComponent ref="drawer" />   
     </div>
     <div class="main-panel">
         <div class="inner-content">

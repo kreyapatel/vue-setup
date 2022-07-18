@@ -189,3 +189,171 @@ body{
         border-right: solid 8px rgba(97, 97, 97, 0.9);
     }
 }
+
+// admin control page css
+.card-form-wrapper{
+    &.admin-control-wrapper{
+        .filter-controls{
+            margin: 0;
+            align-items: center;
+            .v-input{
+                max-width: 320px; 
+                margin-right: 25px;                   
+                .v-input__slot{
+                    &:after,&:before{
+                        display: none !important;
+                    }
+                }
+                input{
+                    border: 1px solid $gray5;
+                    padding: 7px 10px 6px;
+                    text-overflow: ellipsis;
+                    @include transition(all 0.3s ease-in-out);
+                    @include border-radius(3px);
+                    &:focus{
+                        border-color: $red;
+                    }
+                }
+            }  
+            .primary-btn,.reset-btn{
+                min-width: unset !important;
+                padding: 9px 14px;
+                border-radius: 3px;
+                height: 36px;
+                .v-btn__content{
+                    padding: 0;
+                    font-size: 15px;
+                    line-height: 19px;
+                    .v-icon.v-icon--left{
+                        margin-right: 4px;
+                    }
+                }
+                &.search-btn{
+                    max-width: 100px;
+                } 
+                &.admin-btn{
+                    max-width: 120px;
+                }               
+            }   
+            .reset-btn{
+                max-width: 95px;
+                margin: 0 25px 0 10px;
+                color: $light-gray5;
+                background: #f5f5f5;
+                border: 1px solid #d7d7d7;
+                text-transform: unset;
+                box-shadow: none;
+            }           
+        }  
+        .v-data-table.custom-datatable{
+            .v-data-footer{
+                margin: 25px -15px 0;
+            }
+        }     
+    }
+}
+.v-data-table{
+    &.custom-datatable{
+        width: 100%;
+        padding: 0;
+        > .v-data-table__wrapper{
+            > table{
+                > thead{
+                    > tr{
+                        > th{
+                            font-size: 15px;
+                            line-height: 21px;
+                            font-weight: 400;
+                            color: $gray6 !important;
+                        }
+                    }
+                }
+                > tbody{
+                    > tr{
+                        > td{
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $gray7;
+                            padding: 11px 15px;
+                            .v-icon.v-icon.v-icon--link{
+                                color: $light-gray3;                                
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+        .v-data-footer{
+            // margin: 0 -15px;
+            margin-top: 25px;
+            padding: 15px;
+            border-top:1px solid #efefef;
+            .v-data-footer__select{
+                margin-left: unset;
+                order: 4;
+                font-size: 15px;
+                color: $light-gray5;
+                .v-select{
+                    margin: 0 0 0 10px;
+                }
+                .v-input__control{
+                    .v-input__slot{
+                        border: 1px solid $gray5;
+                        border-radius: 4px;
+                        padding: 9px 35px 10px 15px;
+                        height: 35px;
+                        .v-select__slot{
+                            position: static;
+                        }
+                        .v-select__selection--comma{
+                            font-size: 15px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            width: 30px;
+                        }
+                        .v-input{
+                            input{
+                                max-height: unset;
+                                min-height: unset;
+                            }
+                        }
+                        .v-input__append-inner{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            border-left: 1px solid $gray5;
+                            background-color: $light-gray6;
+                            width: 35px;
+                            margin-top: 0;
+                            display: flex;
+                            align-items: center;
+                        }
+                        &:before,&:after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .v-data-footer__pagination{
+                order: 3;
+                margin-left: auto;
+                margin-right: 10px;
+                font-size: 15px;
+                color: $light-gray5;
+            }
+            .v-data-footer__icons-before{
+                order: 1;
+            }
+            .v-data-footer__icons-after{
+                order: 2;
+            }
+            .v-data-footer__icons-before, .v-data-footer__icons-after{
+                .v-btn{
+                    border: 1px solid $light-gray4;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
